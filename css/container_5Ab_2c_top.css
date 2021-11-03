@@ -1,0 +1,210 @@
+@charset "Shift_JIS";
+
+/* 要素リセット */
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 75%;
+    font-family: 'メイリオ' ,Meiryo, 'ヒラギノ角ゴ Pro W3' , 'Hiragino Kaku Gothic Pro' , 'ＭＳ Ｐゴシック' , 'Osaka' ,sans-serif;
+    color: #666666; /* 標準文字色 */
+}
+/* Safari用ハック 文字サイズ調整 */
+/*\*/
+html:\66irst-child body{
+    font-size: 70%;
+}
+/* end */
+
+img{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+/*--------------------------------------------------------
+  レイアウト設定
+--------------------------------------------------------*/
+#hpb-container{
+    width: 900px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    position: relative;
+}
+
+#hpb-header{
+    height: 83px;
+}
+
+#hpb-inner{
+    position: relative;
+    padding-top: 54px;
+    width: 100%;
+}
+
+#hpb-inner:after{
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+#hpb-wrapper{
+    width: 590px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    float: left;
+}
+
+#hpb-title{
+    width: 590px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+#hpb-main{
+    width: 590px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#hpb-aside{
+    width: 300px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    float: right;
+    padding-bottom: 20px;
+}
+
+#hpb-footer{
+    background-image : url(footerbg_5Ab.png);
+    background-position: left top;
+    background-repeat: repeat-x;
+    padding-bottom: 20px;
+    clear: both;
+    position: relative;
+}
+
+#hpb-nav{
+    width: 900px;
+    height: 41px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image : url(../img/mainmenubg_5Ab_01.png);
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+
+
+/*--------------------------------------------------------
+  デザイン設定
+--------------------------------------------------------*/
+/* 背景設定 */
+
+/* コンテンツ配置領域 */
+
+/* ナビゲーション */
+#hpb-nav ul{
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#hpb-nav ul:after{
+    content: ".";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+#hpb-nav li{
+    display: block;
+    width: 149px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #ffffff;
+    float: left;
+    height: 40px;
+    overflow: hidden;
+}
+
+#hpb-nav li a{
+    display: block;
+    height: 40px;
+}
+
+#hpb-nav li span.en{
+    display: block;
+    line-height: 12px;
+    padding-top: 7px;
+    font-size: 10px;
+    font-family: century, serif;
+    text-transform: uppercase;
+}
+
+#hpb-nav li span.ja{
+    display: block;
+    line-height: 12px;
+    font-size: 12px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+
+#hpb-nav a:link{
+    color: #6999AD;
+    text-decoration: none;
+    background-image : url(../img/mainmenubg_5Ab_01.png);
+    background-position: top left;
+    background-repeat: repeat-x;
+}
+#hpb-nav a:visited{
+    color: #6999AD;
+    text-decoration: none;
+    background-image : url(../img/mainmenubg_5Ab_01.png);
+    background-position: top left;
+    background-repeat: repeat-x;
+}
+#hpb-nav a:hover{
+    background-image : url(../img/mainmenu_5Ab_01_on.png);
+    background-position: top left;
+    background-repeat: repeat-x;
+    color: #ffffff;
+    text-decoration: none;
+}
+#hpb-nav a:active{
+    background-image : url(../img/mainmenu_5Ab_01_on.png);
+    background-position: top left;
+    background-repeat: repeat-x;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------
+  共通パーツデザイン設定
+--------------------------------------------------------*/
+
+

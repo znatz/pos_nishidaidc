@@ -1,0 +1,121 @@
+@charset "Shift_JIS";
+
+/* 要素リセット */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 75%;
+    font-family: 'メイリオ' , Meiryo, 'ヒラギノ角ゴ Pro W3' , 'Hiragino Kaku Gothic Pro' , 'ＭＳ Ｐゴシック' , 'Osaka' , sans-serif;
+    color: #fff; /* 標準文字色 */
+    background-color: #000000;
+	background-image : url(bg_5Lb.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+/* Safari用ハック 文字サイズ調整 */
+/*\*/
+html:\66irst-child body{
+    font-size: 70%;
+}
+/* end */
+
+img{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+/*--------------------------------------------------------
+  レイアウト設定
+--------------------------------------------------------*/
+
+#hpb-container{
+	position: relative;
+}
+
+
+#hpb-inner{
+	background-image : url(mainBg_5Lb.png);
+    background-position: left top;
+    background-repeat: repeat-y;
+}
+#hpb-inner:after{
+	content: ".";  
+	display: block;  
+	clear: both;
+	height: 0;
+	visibility: hidden;
+
+}
+
+
+.hpb-layoutset-01 #hpb-inner{
+	padding-top: 424px;
+}
+.hpb-layoutset-02 #hpb-inner{
+	padding-top: 86px;
+}
+#hpb-title{
+	position: absolute;
+	top: 148px;
+	width: 960px;
+	left: 0;
+	width: 960px;
+	border-bottom: 1px solid #1e1e1e;
+}
+
+#hpb-main{
+    width: 642px;
+	float: left;
+}
+.hpb-layoutset-01 #hpb-main{
+	padding-top: 175px;
+}
+.hpb-layoutset-02 #hpb-main{
+	padding-top: 131px;
+}
+#hpb-aside{
+ 	width: 318px;
+	float: left;
+}
+.hpb-layoutset-01 #hpb-aside{
+	padding-top: 160px;
+}
+.hpb-layoutset-02 #hpb-aside{
+	padding-top: 149px;
+}
+
+
+
+#hpb-nav{
+    width: 960px;
+    left: 0px;
+	top: 92px;
+	position: absolute;
+}
+
+/*--------------------------------------------------------
+  デザイン設定
+--------------------------------------------------------*/
+
+/* ヘッダー内パーツ */
+#hpb-header{
+	background-image : url(headerBg_5Lb.png);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+	padding-bottom: 5px;
+}
+
+/* コンテンツ配置領域 */
+
+.hpb-layoutset-01 #hpb-title{
+    background-image : url(top_mainimg_5Lb.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+	height: 530px;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+

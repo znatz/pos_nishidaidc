@@ -1,0 +1,12 @@
+{
+    "repositories": [{
+        "type": "path",
+        "url": "../vendor/phpoffice/phpexcel",
+        "options": {
+            "symlink": false
+        }
+    }],
+    "require": {
+        "phpoffice/phpexcel": "^1.8"
+    }
+}
